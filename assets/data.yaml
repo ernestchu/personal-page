@@ -1,0 +1,98 @@
+name: Ernie Chu
+profilePic: /images/profile.webp
+defaultThumbnail: /images/projects/default.webp
+profiles:
+  - Research Assistant
+  - Research Center for Information Technology Innovation
+  - Academia Sinica 
+  - 'Email: shchu [at] citi.sinica.edu.tw'
+  - 'Quick links:
+    <a href="http://ernestchu.github.io/cv/cv.pdf" target="_blank">CV</a> /
+    <a href="https://github.com/ernestchu" target="_blank">GitHub</a> /
+    <a href="https://ernestchu.github.io/course-notes/" target="_blank">Notes</a>'
+bios:
+  - I am an Research Assistant in CITI at Academia Sinica studying computer vision,
+    generative models and AI, under the supervision of Professor
+    <a href="https://www.citi.sinica.edu.tw/pages/pullpull/index_en.html" target="_blank">Jun-Cheng Chen</a>.
+    I received my undergraduate degree in Computer Science and Engineering from
+    National Sun Yat-sen University, where I got my start on research working with Professor
+    <a href="http://slpl.cse.nsysu.edu.tw/cpchen/" target="_blank">Chia-Ping Chen</a>.
+
+  - My primary interest lies in machine learning and generative 
+    models. I'm currently working on video generation using
+    image Diffusion Models. (Last updated on June 1, 2023)
+
+  - Before join CITI, I also worked part-time at
+    the Office of International Affairs, NSYSU as a full stack
+    Web developer. I develop Web applications for exchange programs
+    mostly using PHP, Express, Vue, and maintaining all websites across
+    the OIA office.
+
+  - I've also involved in subjects such as,
+    <a href="https://ernestchu.github.io/cse410-introduction-to-computer-graphics/Assignments/" target="_blank">computer graphics</a>,
+    <a href="https://github.com/ernestchu/ftp-program-with-data-compression" target="_blank">socket programming</a>,
+    <a href="https://github.com/ernestchu/on-line-chatting-service/tree/abe" target="_blank">attribute-based encryption</a>,
+    <a href="https://ernestchu.github.io/mis588-data-visualization/" target="_blank">data visualization</a>,
+    <a href="https://github.com/ernestchu/java-compiler-front-end" target="_blank">compiler design</a> and
+    <a href="https://github.com/ernestchu/nsysu-captcha-solver" target="_blank">chrome extension development</a> during my undergraduate study.
+
+projects:
+  - title: LoLViZ.
+    descriptions:
+      - A League of Legends visualizer that helps the pro players in the 
+        challenger league exploring their matches.
+      - Use Vue.js along with D3.js to create flexible and meaningful visualizations.
+      - Utilize the Riot API and AWS cloud services to retrieve the latest 
+        player and match informations.
+    links:
+      Demo: 'https://ernestchu.github.io/lol-viz/'
+      Talk: 'https://youtu.be/hQ1XeHcu0ns'
+      Repository: 'https://github.com/ernestchu/lol-viz'
+  - title: 'TSM-Net: Audio Time-Scale Modification with Temporal Compressing Networks'
+    descriptions:
+      - Use an autoencoder to compress the audio into 1024 times smaller
+        latent representation for time-scale modification.
+      - Use multi-scale discriminator to train the model for the best
+        audio quality on all frequency bands.
+    links:
+      Paper: 'https://arxiv.org/abs/2210.17152'
+      Poster: 'https://ernestchu.github.io/tsm-net-poster/poster.pdf'
+      Talk: 'https://youtu.be/h69v7_ZOKCM'
+      Demo: 'https://ernestchu.github.io/tsm-net-demo/'
+
+  - title: NSYSU Captcha Solver
+    descriptions:
+      - Use convolutional neural networks to autofill the captcha verification
+        in the course explorer.
+      - Use TensorFlow.js in Chrome extension to implement on-device inference.
+    links:
+      Repository: 'https://github.com/ernestchu/nsysu-captcha-solver'
+    thumbnail: /images/projects/nsysu-captcha-solver.gif
+
+  - title: Secure On-line Chatting Service
+    descriptions:
+      - On-line chatting service with console-based UI using ncurses.
+      - Socket programming and multi-threading using C++17
+      - Use attribute-based encryption to provide secure channel for messages.
+    links:
+      Repository: https://github.com/ernestchu/on-line-chatting-service/tree/abe
+      Demonstartion: https://youtu.be/S-j5kQz_-7Y
+      Paper: https://ernestchu.github.io/abe-examples/paper.pdf
+    thumbnail: /images/projects/secure-on-line-chatting-service.webp
+
+  - title: License Plate Verification and Warning System
+    descriptions:
+      - Use ML-based object detection technology to track the license plate.
+      - The barrier gate is no longer needed as the system can detect moving target.
+      - All of the inferences can be done on end-device, for example Jetson Nano.
+    links: 
+      Repository: https://github.com/ernestchu/license-plate-verification-warning-system
+      Demo: https://youtu.be/jDKGAp2Puh0
+    thumbnail: /images/projects/license-plate-verification-and-warning-system.gif
+
+  - title: Deep Generative Models For ECG Denoising And Filtering
+    descriptions:
+      - Utilize domain-transferring generative models to mitigate the noise within ECG signals.
+      - This work deals with the classification of realistic noisy data and provides pragmatic results.
+    links:
+      Paper: https://ernestchu.github.io/noise-ecg-classification/paper.pdf
