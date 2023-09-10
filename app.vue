@@ -25,41 +25,43 @@ useSeoMeta({
 </script>
 
 <template>
-  <img :src="data.profilePic" alt="profile pic" id="profile-pic">
-  <div id="profile">
-    <h2>{{ data.name }}</h2>
-    <p v-for="profile in data.profiles"><span v-html="profile"></span></p>
-  </div>
-  <p v-for="bio in data.bios"><span v-html="bio"></span></p>
-
-  <hr>
-
-  <div id="pubs">
-    <h2>Publications</h2>
-    <p>Please refer to my CV and <a href="https://scholar.google.com/citations?user=ijvH9xQAAAAJ" target="_blank">Google Scholar profile</a></p>
-  </div>
-
-  <hr>
-  
-  <div id="projects">
-    <h2>Selected Projects</h2>
-    <div class="project" v-for="project in data.projects">
-      <h3>{{ project.title }}</h3>
-      <!-- <img :src="project.thumbnail ? project.thumbnail : defaultThumbnail" alt="project thumbnail" loading="lazy"> -->
-      <div class="contents">
-        <ul>
-          <li v-for="description in project.descriptions">{{ description }}</li>
-        </ul>
-        <div class="link" v-for="[linkName, link] in Object.entries(project.links)">
-          [<a :href="link" target="_blank">{{ linkName }}</a>]
-        </div>
-      </div>
-      <hr>
+  <div id="app">
+    <img :src="data.profilePic" alt="profile pic" id="profile-pic">
+    <div id="profile">
+      <h2>{{ data.name }}</h2>
+      <p v-for="profile in data.profiles"><span v-html="profile"></span></p>
     </div>
+    <p v-for="bio in data.bios"><span v-html="bio"></span></p>
+
+    <hr>
+
+    <div id="pubs">
+      <h2>Publications</h2>
+      <p>Please refer to my CV and <a href="https://scholar.google.com/citations?user=ijvH9xQAAAAJ" target="_blank">Google Scholar profile</a></p>
+    </div>
+
+    <hr>
+    
+    <div id="projects">
+      <h2>Selected Projects</h2>
+      <div class="project" v-for="project in data.projects">
+        <h3>{{ project.title }}</h3>
+        <!-- <img :src="project.thumbnail ? project.thumbnail : defaultThumbnail" alt="project thumbnail" loading="lazy"> -->
+        <div class="contents">
+          <ul>
+            <li v-for="description in project.descriptions">{{ description }}</li>
+          </ul>
+          <div class="link" v-for="[linkName, link] in Object.entries(project.links)">
+            [<a :href="link" target="_blank">{{ linkName }}</a>]
+          </div>
+        </div>
+        <hr>
+      </div>
+    </div>
+    <!--
+    <a href="cse435-introduction-to-electronic-design-automation-and-testing/hw5/hw5.pdf" class="hide">print</a>
+    -->
   </div>
-  <!--
-  <a href="cse435-introduction-to-electronic-design-automation-and-testing/hw5/hw5.pdf" class="hide">print</a>
-  -->
 </template>
 
 <style>
