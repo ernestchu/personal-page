@@ -37,7 +37,7 @@ bios:
     <a href="https://github.com/ernestchu/nsysu-captcha-solver" target="_blank">chrome extension development</a> during my undergraduate study.
 
 projects:
-  - title: MeDM: Mediating Image Diffusion Models for Video-to-Video Translation with Temporal Correspondence Guidance
+  - title: 'MeDM: Mediating Image Diffusion Models for Video-to-Video Translation with Temporal Correspondence Guidance'
     descriptions:
       - Enable temporally consistent video rendering and translation using image Diffusion Models.
       - Mediate independent image score estimations after every denoising step.
