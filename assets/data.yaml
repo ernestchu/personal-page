@@ -46,7 +46,7 @@ projects:
       Paper: 'https://medm2023.github.io/medm.pdf'
       'Project page': 'https://medm2023.github.io'
       arXiv: 'https://arxiv.org/abs/2308.10079'
-      
+
   - title: LoLViZ.
     descriptions:
       - A League of Legends visualizer that helps the pro players in the 
