@@ -37,17 +37,27 @@ bios:
     <a href="https://github.com/ernestchu/nsysu-captcha-solver" target="_blank">chrome extension development</a> during my undergraduate study.
 
 projects:
+  - title: MeDM: Mediating Image Diffusion Models for Video-to-Video Translation with Temporal Correspondence Guidance
+    descriptions:
+      - Enable temporally consistent video rendering and translation using image Diffusion Models.
+      - Mediate independent image score estimations after every denoising step.
+      - Inspired by the fact that video pixels are essentially views to the underlying objects, we construct an explicit pixel repository to represent the underlying world.
+    links:
+      Paper: 'https://medm2023.github.io/medm.pdf'
+      'Project page': 'https://medm2023.github.io'
+      arXiv: 'https://arxiv.org/abs/2308.10079'
+      
   - title: LoLViZ.
     descriptions:
       - A League of Legends visualizer that helps the pro players in the 
         challenger league exploring their matches.
-      - Use Vue.js along with D3.js to create flexible and meaningful visualizations.
-      - Utilize the Riot API and AWS cloud services to retrieve the latest 
-        player and match informations.
+      - Use Vue.js along with D3.js to create flexible and informative visualizations.
+      - Utilize the Riot API and Google Firebase to retrieve the latest player and match informations.
     links:
       Demo: 'https://ernestchu.github.io/lol-viz/'
       Talk: 'https://youtu.be/hQ1XeHcu0ns'
       Repository: 'https://github.com/ernestchu/lol-viz'
+      
   - title: 'TSM-Net: Audio Time-Scale Modification with Temporal Compressing Networks'
     descriptions:
       - Use an autoencoder to compress the audio into 1024 times smaller
@@ -55,10 +65,9 @@ projects:
       - Use multi-scale discriminator to train the model for the best
         audio quality on all frequency bands.
     links:
-      Paper: 'https://arxiv.org/abs/2210.17152'
-      Poster: 'https://ernestchu.github.io/tsm-net-poster/poster.pdf'
+      Paper: 'https://ernestchu.github.io/tsmnet.pdf'
       Talk: 'https://youtu.be/h69v7_ZOKCM'
-      Demo: 'https://ernestchu.github.io/tsm-net-demo/'
+      Demo: 'https://tsmnet-mmasia23.github.io'
 
   - title: NSYSU Captcha Solver
     descriptions:
@@ -89,10 +98,3 @@ projects:
       Repository: https://github.com/ernestchu/license-plate-verification-warning-system
       Demo: https://youtu.be/jDKGAp2Puh0
     thumbnail: /images/projects/license-plate-verification-and-warning-system.gif
-
-  - title: Deep Generative Models For ECG Denoising And Filtering
-    descriptions:
-      - Utilize domain-transferring generative models to mitigate the noise within ECG signals.
-      - This work deals with the classification of realistic noisy data and provides pragmatic results.
-    links:
-      Paper: https://ernestchu.github.io/noise-ecg-classification/paper.pdf
