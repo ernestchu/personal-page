@@ -46,6 +46,7 @@ projects:
       Paper: 'https://medm2023.github.io/medm.pdf'
       'Project page': 'https://medm2023.github.io'
       arXiv: 'https://arxiv.org/abs/2308.10079'
+      GitHub: 'https://github.com/aiiu-lab/MeDM'
 
   - title: LoLViZ.
     descriptions:
@@ -54,9 +55,9 @@ projects:
       - Use Vue.js along with D3.js to create flexible and informative visualizations.
       - Utilize the Riot API and Google Firebase to retrieve the latest player and match informations.
     links:
-      Demo: 'https://ernestchu.github.io/lol-viz/'
+      'Project page': 'https://ernestchu.github.io/lol-viz/'
       Talk: 'https://youtu.be/hQ1XeHcu0ns'
-      Repository: 'https://github.com/ernestchu/lol-viz'
+      GitHub: 'https://github.com/ernestchu/lol-viz'
       
   - title: 'TSM-Net: Audio Time-Scale Modification with Temporal Compressing Networks'
     descriptions:
@@ -65,9 +66,11 @@ projects:
       - Use multi-scale discriminator to train the model for the best
         audio quality on all frequency bands.
     links:
-      Paper: 'https://ernestchu.github.io/tsmnet.pdf'
+      Paper: 'https://arxiv.org/pdf/2210.17152.pdf'
+      'Project page': 'https://tsmnet-mmasia23.github.io'
+      arXiv: 'https://arxiv.org/abs/2308.10079'
       Talk: 'https://youtu.be/h69v7_ZOKCM'
-      Demo: 'https://tsmnet-mmasia23.github.io'
+      GitHub: 'https://github.com/tsmnet-mmasia23/tsmnet'
 
   - title: NSYSU Captcha Solver
     descriptions:
@@ -75,7 +78,7 @@ projects:
         in the course explorer.
       - Use TensorFlow.js in Chrome extension to implement on-device inference.
     links:
-      Repository: 'https://github.com/ernestchu/nsysu-captcha-solver'
+      GitHub: 'https://github.com/ernestchu/nsysu-captcha-solver'
     thumbnail: /images/projects/nsysu-captcha-solver.gif
 
   - title: Secure On-line Chatting Service
@@ -84,8 +87,8 @@ projects:
       - Socket programming and multi-threading using C++17
       - Use attribute-based encryption to provide secure channel for messages.
     links:
-      Repository: https://github.com/ernestchu/on-line-chatting-service/tree/abe
-      Demonstartion: https://youtu.be/S-j5kQz_-7Y
+      GitHub: https://github.com/ernestchu/on-line-chatting-service/tree/abe
+      Demo: https://youtu.be/S-j5kQz_-7Y
       Paper: https://ernestchu.github.io/abe-examples/paper.pdf
     thumbnail: /images/projects/secure-on-line-chatting-service.webp
 
@@ -95,6 +98,6 @@ projects:
       - The barrier gate is no longer needed as the system can detect moving target.
       - All of the inferences can be done on end-device, for example Jetson Nano.
     links: 
-      Repository: https://github.com/ernestchu/license-plate-verification-warning-system
+      GitHub: https://github.com/ernestchu/license-plate-verification-warning-system
       Demo: https://youtu.be/jDKGAp2Puh0
     thumbnail: /images/projects/license-plate-verification-and-warning-system.gif
