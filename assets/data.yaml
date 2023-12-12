@@ -36,18 +36,26 @@ bios:
     <a href="https://github.com/ernestchu/java-compiler-front-end" target="_blank">compiler design</a> and
     <a href="https://github.com/ernestchu/nsysu-captcha-solver" target="_blank">chrome extension development</a> during my undergraduate study.
 
-projects:
+publications:
   - title: 'MeDM: Mediating Image Diffusion Models for Video-to-Video Translation with Temporal Correspondence Guidance'
-    descriptions:
-      - Enable temporally consistent video rendering and translation using image Diffusion Models.
-      - Mediate independent image score estimations after every denoising step.
-      - Inspired by the fact that video pixels are essentially views to the underlying objects, we construct an explicit pixel repository to represent the underlying world.
+    abstract: This study introduces an efficient and effective method, MeDM, that utilizes pre-trained image Diffusion Models for video-to-video translation with consistent temporal flow. The proposed framework can render videos from scene position information, such as a normal G-buffer, or perform text-guided editing on videos captured in real-world scenarios. We employ explicit optical flows to construct a practical coding that enforces physical constraints on generated frames and mediates independent frame-wise scores. By leveraging this coding, maintaining temporal consistency in the generated videos can be framed as an optimization problem with a closed-form solution. To ensure compatibility with Stable Diffusion, we also suggest a workaround for modifying observed-space scores in latent-space Diffusion Models. Notably, MeDM does not require fine-tuning or test-time optimization of the Diffusion Models. Through extensive qualitative, quantitative, and subjective experiments on various benchmarks, the study demonstrates the effectiveness and superiority of the proposed approach.
+    authors: <a>Ernie Chu</a>, Tzuhsuan Huang, Shuo-Yen Lin, Jun-Cheng Chen
+    venue: AAAI Conference 2024
     links:
       Paper: 'https://medm2023.github.io/medm.pdf'
       'Project page': 'https://medm2023.github.io'
       arXiv: 'https://arxiv.org/abs/2308.10079'
       GitHub: 'https://github.com/aiiu-lab/MeDM'
 
+  - title: 'Multi-Task Self-Blended Images for Face Forgery Detection'
+    abstract: Deepfake detection has attracted extensive attention due to widespread forged images on social media. Recently, self-supervised learning (SSL)-based Deepfake detection approaches have outperformed supervised methods in terms of model generalization. However, we notice that most SSL-based methods do not take the manipulation strength levels of synthesized forgery samples into consideration according to different synthesis parameters and result in suboptimal detection performances. To address this issue, we introduce several auxiliary losses to the state-of-the-art SSL-based method based on different synthesis sub-tasks during data generation by inferring their synthesis parameters where the ground-truth labels are obtained from the synthesis pipeline for free. With comprehensive evaluations on various benchmarks, our approach has achieved noticeable performance improvement. Specifically, for the cross-dataset evaluation, the proposed approach outperforms the state-of-the-art method in terms of AUC on various datasets with improvements of 3.4%, 1.47%, 1.56%, and 1.3% on the CDF, DFDC, DFDCP, and FFIW datasets and achieves competitive performance on the DFD dataset. This further demonstrates the effectiveness of the proposed approach in generalization.
+    authors: Po-Han Huang, Yue-Hua Han, <a>Ernie Chu</a>, Jun-Cheng Chen, Kai-Lung Hua
+    venue: ACM Multimedia Asia 2023
+    links:
+      Paper: '/mtsbi.pdf'
+      Talk: 'https://youtu.be/ZWsHTJAPBzM'
+
+projects:
   - title: LoLViZ.
     descriptions:
       - A League of Legends visualizer that helps the pro players in the 

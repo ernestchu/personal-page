@@ -36,8 +36,20 @@ useSeoMeta({
     <hr>
 
     <div id="pubs">
-      <h2>Publications</h2>
-      <p>Please refer to my CV and <a href="https://scholar.google.com/citations?user=ijvH9xQAAAAJ" target="_blank">Google Scholar profile</a></p>
+      <h2>Selected Publications</h2>
+      <div class="project" v-for="pub in data.publications">
+        <h3>{{ pub.title }}</h3>
+        <div class="contents">
+          <div v-html="pub.authors"></div>
+          <h4>{{ pub.venue }}</h4>
+          <div class="link" v-for="[linkName, link] in Object.entries(pub.links)">
+            [<a :href="link" target="_blank">{{ linkName }}</a>]
+          </div>
+          <p>{{ pub.abstract }}</p>
+        </div>
+        <hr>
+      </div>
+      <p>Please refer to my CV and <a href="https://scholar.google.com/citations?user=ijvH9xQAAAAJ" target="_blank">Google Scholar profile</a> for a full list.</p>
     </div>
 
     <hr>
@@ -99,10 +111,6 @@ a:active:after {
   top: 0%;
 }
 
-p {
-  font-size: 14pt;
-}
-
 hr {
   border: solid #D5D0C0 1px;
 }
@@ -127,24 +135,32 @@ div#profile {
 
 img#profile-pic {
   padding: 15px 0;
-  width: 250px;
+  width: 220px;
 }
+/*
 @media (max-width: 800px) {
 img#profile-pic {
   display: none;
 }
 }
+*/
 
-div#projects div.link {
+div#projects div.link,
+div#pubs div.link
+{
   display: inline;
   margin-right: 5px;
 }
 
-div#projects img {
+div#projects img,
+div#pubs img
+{
   width: 200px;
 }
 
-div#projects .contents {
+div#projects .contents,
+div#pubs .contents
+{
   vertical-align: top;
   margin-left: 20px;
   display: inline-block;
@@ -152,10 +168,14 @@ div#projects .contents {
 }
 
 @media (max-width: 800px) {
-div#projects img {
+div#projects img,
+div#pubs img
+{
   display: none;
 }
-div#projects .contents {
+div#projects .contents,
+div#pubs .contents
+{
   vertical-align: initial;
   margin-left: initial;
   display: initial;
