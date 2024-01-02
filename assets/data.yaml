@@ -42,9 +42,9 @@ publications:
     authors: <a>Ernie Chu</a>, Tzuhsuan Huang, Shuo-Yen Lin, Jun-Cheng Chen
     venue: AAAI Conference 2024
     links:
-      Paper: 'https://medm2023.github.io/medm.pdf'
       'Project page': 'https://medm2023.github.io'
-      arXiv: 'https://arxiv.org/abs/2308.10079'
+      Paper: 'https://arxiv.org/abs/2308.10079'
+      Paper (HQ): 'https://medm2023.github.io/medm.pdf'
       GitHub: 'https://github.com/aiiu-lab/MeDM'
 
   - title: 'Multi-Task Self-Blended Images for Face Forgery Detection'
@@ -52,7 +52,7 @@ publications:
     authors: Po-Han Huang, Yue-Hua Han, <a>Ernie Chu</a>, Jun-Cheng Chen, Kai-Lung Hua
     venue: ACM Multimedia Asia 2023
     links:
-      Paper: '/mtsbi.pdf'
+      Paper: 'https://doi.org/10.1145/3595916.3626426'
       Talk: 'https://youtu.be/ZWsHTJAPBzM'
 
 projects:
