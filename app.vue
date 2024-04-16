@@ -1,7 +1,12 @@
 <script setup>
 import data from '~/assets/data.yaml'
+import { onMounted, nextTick } from 'vue'
 useHead({
   title: data.name,
+  link: [
+    { rel: 'stylesheet', href: 'https://use.typekit.net/vxy8tas.css' },
+    { rel: 'stylesheet', href: 'https://use.typekit.net/jge8wgr.css' },
+  ],
   meta: [
     {
       name: 'description',
@@ -22,14 +27,17 @@ useSeoMeta({
   ogImage: 'https://ernestchu.github.io/assets/images/profile.webp',
   twitterCard: 'summary_large_image',
 })
+
+onMounted(() => {
+})
 </script>
 
 <template>
   <div id="app">
     <img :src="data.profilePic" alt="profile pic" id="profile-pic">
     <div id="profile">
-      <h2>{{ data.name }}</h2>
-      <p v-for="profile in data.profiles"><span v-html="profile"></span></p>
+      <div class="myname">{{ data.name }}</div>
+      <div v-for="profile in data.profiles"><span v-html="profile"></span></div>
     </div>
     <p v-for="bio in data.bios"><span v-html="bio"></span></p>
 
@@ -70,6 +78,8 @@ useSeoMeta({
         <hr>
       </div>
     </div>
+
+    <component :is="'script'" type="text/javascript" src="//rf.revolvermaps.com/0/0/7.js?i=5dpip5c0mhs&amp;m=0c&amp;c=68ace5&amp;cr1=ffffff&amp;crb1=000000&amp;sx=0&amp;rs=100&amp;cw=f6f6f5&amp;cb=002d72" async="async"></component>
     <!--
     <a href="cse435-introduction-to-electronic-design-automation-and-testing/hw5/hw5.pdf" class="hide">print</a>
     -->
@@ -78,9 +88,16 @@ useSeoMeta({
 
 <style>
 body {
-  font-family: -apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+  /*font-family: -apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;*/
+  font-family: "proxima-nova", sans-serif;
   color: #303030;
-  background-color: #EAE9E4;
+  background-color: #f6f6f5;
+}
+
+h2 {
+  font-family: "factoria", sans-serif;
+  font-weight: 700;
+  font-size: 20pt;
 }
 
 a {
@@ -89,6 +106,7 @@ a {
   position: relative;
   white-space: nowrap;
   cursor: pointer;
+  transition: all 500ms cubic-bezier(0, 0.8, 0.13, 1);
 }
 a:after {
   content: '';
@@ -98,17 +116,25 @@ a:after {
   left: -0.1em;
   right: -0.1em;
   bottom: 0;
-  transition: top 200ms cubic-bezier(0, 0.8, 0.13, 1);
-  background-color: #8C151555;
+  transition: all 500ms cubic-bezier(0, 0.8, 0.13, 1);
+  background-color: #68ACE5bb;
 }
 
 @media (hover: hover) {
+  a:hover {
+    color: #fff;
+  }
   a:hover:after {
     top: 0%;
+    background-color: #002D72;
   }
+}
+a:hover {
+  color: #fff;
 }
 a:active:after {
   top: 0%;
+  background-color: #002D72;
 }
 
 hr {
@@ -118,6 +144,13 @@ hr {
 div#app {
   margin: 0 10%;
   padding-bottom: 50px;
+}
+
+.myname {
+  margin: 30px 0 35px 0;
+  font-family: "factoria", sans-serif;
+  font-weight: 700;
+  font-size: 30pt;
 }
 
 div#profile {

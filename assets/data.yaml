@@ -43,8 +43,9 @@ publications:
     venue: AAAI Conference 2024
     links:
       'Project page': 'https://medm2023.github.io'
-      Paper: 'https://arxiv.org/abs/2308.10079'
-      Paper (HQ): 'https://medm2023.github.io/medm.pdf'
+      Paper: 'https://doi.org/10.1609/aaai.v38i2.27899'
+      arXiv: 'https://arxiv.org/abs/2308.10079'
+      Poster: 'https://medm2023.github.io/medm-poster.pdf'
       GitHub: 'https://github.com/aiiu-lab/MeDM'
 
   - title: 'Multi-Task Self-Blended Images for Face Forgery Detection'
