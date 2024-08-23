@@ -14,7 +14,7 @@ useHead({
     },
     {
       name: "google-site-verification",
-      content: "I9VHWgYS9g3o8RUJ7ryB1hPoIcN9YK1bX1Ds7_uDIYE",
+      content: "1YldIPrKcx2CvMSIU19VVysjc4Eq2YtWhCnaY6Uc64U",
     },
   ],
 })
