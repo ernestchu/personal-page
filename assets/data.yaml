@@ -1,18 +1,18 @@
 name: Ernie Chu
-profilePic: /images/profile.webp
-defaultThumbnail: /images/projects/default.webp
 profiles:
-  - Research Assistant
-  - Research Center for Information Technology Innovation
-  - Academia Sinica 
-  - 'Email: shchu [at] citi.sinica.edu.tw'
+  - PhD Student
+  - Dept. Computer Science
+  - Johns Hopkins University
+  - 'Email: schu23 [at] jhu.edu'
   - 'Quick links:
     <a href="http://ernestchu.github.io/cv/cv.pdf" target="_blank">CV</a> /
     <a href="https://github.com/ernestchu" target="_blank">GitHub</a> /
     <a href="https://ernestchu.github.io/course-notes/" target="_blank">Notes</a>'
 bios:
-  - I am a Research Assistant in CITI at Academia Sinica studying computer vision,
-    generative models and AI, under the supervision of Professor
+  - I am a 1st-year PhD Stuent in Johns Hopkins University, advised by Professor
+    <a href="https://engineering.jhu.edu/vpatel36/vishal-patel/" target="_blank">Vishal Patel</a>.
+    My primary research focus is on computer vision, generative models and AI.
+    Before coming into JHU, I was a Research Assistant in CITI at Academia Sinica with Professor
     <a href="https://www.citi.sinica.edu.tw/pages/pullpull/index_en.html" target="_blank">Jun-Cheng Chen</a>.
     I received my undergraduate degree in Computer Science and Engineering from
     National Sun Yat-sen University, where I got my start on research working with Professor

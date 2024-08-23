@@ -5,6 +5,7 @@ export default defineNuxtConfig({
   devtools: { enabled: true },
 
   app: {
+    baseURL: '/~schu23/',
     buildAssetsDir: 'custom_assets', // don't use "_" at the begining of the folder name to avoids nojkill conflict
   },
 

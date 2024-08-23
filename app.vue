@@ -24,7 +24,7 @@ useSeoMeta({
   ogTitle: data.name,
   description: `The homepage of ${data.name}`,
   ogDescription: `The homepage of ${data.name}`,
-  ogImage: 'https://ernestchu.github.io/assets/images/profile.webp',
+  ogImage: 'https://www.cs.jhu.edu/~schu23/images/profile.webp',
   twitterCard: 'summary_large_image',
 })
 
@@ -34,7 +34,7 @@ onMounted(() => {
 
 <template>
   <div id="app">
-    <img :src="data.profilePic" alt="profile pic" id="profile-pic">
+    <img src="/images/profile.webp" alt="profile pic" id="profile-pic">
     <div id="profile">
       <div class="myname">{{ data.name }}</div>
       <div v-for="profile in data.profiles"><span v-html="profile"></span></div>
@@ -57,11 +57,12 @@ onMounted(() => {
         </div>
         <hr>
       </div>
-      <p>Please refer to my CV and <a href="https://scholar.google.com/citations?user=ijvH9xQAAAAJ" target="_blank">Google Scholar profile</a> for a full list.</p>
+      <p>Please refer to my CV and <a href="https://scholar.google.com/citations?user=ijvH9xQAAAAJ"
+          target="_blank">Google Scholar profile</a> for a full list.</p>
     </div>
 
     <hr>
-    
+
     <div id="projects">
       <h2>Selected Projects</h2>
       <div class="project" v-for="project in data.projects">
@@ -79,7 +80,9 @@ onMounted(() => {
       </div>
     </div>
 
-    <component :is="'script'" type="text/javascript" src="//rf.revolvermaps.com/0/0/7.js?i=5dpip5c0mhs&amp;m=0c&amp;c=68ace5&amp;cr1=ffffff&amp;crb1=000000&amp;sx=0&amp;rs=100&amp;cw=f6f6f5&amp;cb=002d72" async="async"></component>
+    <component :is="'script'" type="text/javascript"
+      src="//rf.revolvermaps.com/0/0/7.js?i=5dpip5c0mhs&amp;m=0c&amp;c=68ace5&amp;cr1=ffffff&amp;crb1=000000&amp;sx=0&amp;rs=100&amp;cw=f6f6f5&amp;cb=002d72"
+      async="async"></component>
     <!--
     <a href="cse435-introduction-to-electronic-design-automation-and-testing/hw5/hw5.pdf" class="hide">print</a>
     -->
@@ -108,6 +111,7 @@ a {
   cursor: pointer;
   transition: all 500ms cubic-bezier(0, 0.8, 0.13, 1);
 }
+
 a:after {
   content: '';
   position: absolute;
@@ -124,14 +128,17 @@ a:after {
   a:hover {
     color: #fff;
   }
+
   a:hover:after {
     top: 0%;
     background-color: #002D72;
   }
 }
+
 a:hover {
   color: #fff;
 }
+
 a:active:after {
   top: 0%;
   background-color: #002D72;
@@ -159,17 +166,19 @@ div#profile {
   display: inline-block;
   max-width: calc(100% - 300px);
 }
+
 @media (max-width: 800px) {
-div#profile {
-  padding: initial;
-  max-width: initial;
-}
+  div#profile {
+    padding: initial;
+    max-width: initial;
+  }
 }
 
 img#profile-pic {
   padding: 15px 0;
   width: 220px;
 }
+
 /*
 @media (max-width: 800px) {
 img#profile-pic {
@@ -179,21 +188,18 @@ img#profile-pic {
 */
 
 div#projects div.link,
-div#pubs div.link
-{
+div#pubs div.link {
   display: inline;
   margin-right: 5px;
 }
 
 div#projects img,
-div#pubs img
-{
+div#pubs img {
   width: 200px;
 }
 
 div#projects .contents,
-div#pubs .contents
-{
+div#pubs .contents {
   vertical-align: top;
   margin-left: 20px;
   display: inline-block;
@@ -201,25 +207,26 @@ div#pubs .contents
 }
 
 @media (max-width: 800px) {
-div#projects img,
-div#pubs img
-{
-  display: none;
-}
-div#projects .contents,
-div#pubs .contents
-{
-  vertical-align: initial;
-  margin-left: initial;
-  display: initial;
-  max-width: initial;
-}
+
+  div#projects img,
+  div#pubs img {
+    display: none;
+  }
+
+  div#projects .contents,
+  div#pubs .contents {
+    vertical-align: initial;
+    margin-left: initial;
+    display: initial;
+    max-width: initial;
+  }
 }
 
 .hide {
   opacity: 0;
   transition: opacity .3s;
 }
+
 .hide:hover {
   opacity: 1;
 }
