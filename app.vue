@@ -1,6 +1,9 @@
 <script setup>
-import data from '~/assets/data.yaml'
-import { onMounted, nextTick } from 'vue'
+import plain_data from '~/assets/data.yaml'
+import { onMounted, nextTick, reactive } from 'vue'
+
+const data = reactive(plain_data)
+
 useHead({
   title: data.name,
   link: [
@@ -28,6 +31,7 @@ useSeoMeta({
   twitterCard: 'summary_large_image',
 })
 
+
 onMounted(() => {
 })
 </script>
@@ -50,10 +54,15 @@ onMounted(() => {
         <div class="contents">
           <div v-html="pub.authors"></div>
           <h4>{{ pub.venue }}</h4>
+          <div class="link">
+            [<a @click="pub.show_abstract = !pub.show_abstract">
+              {{ pub.show_abstract ? 'Hide' : 'Show' }} abstract
+            </a>]
+          </div>
           <div class="link" v-for="[linkName, link] in Object.entries(pub.links)">
             [<a :href="link" target="_blank">{{ linkName }}</a>]
           </div>
-          <p>{{ pub.abstract }}</p>
+          <p v-if="pub.show_abstract">{{ pub.abstract }}</p>
         </div>
         <hr>
       </div>
