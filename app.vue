@@ -89,9 +89,6 @@ onMounted(() => {
       </div>
     </div>
 
-    <component :is="'script'" type="text/javascript"
-      src="//rf.revolvermaps.com/0/0/7.js?i=5dpip5c0mhs&amp;m=0c&amp;c=68ace5&amp;cr1=ffffff&amp;crb1=000000&amp;sx=0&amp;rs=100&amp;cw=f6f6f5&amp;cb=002d72"
-      async="async"></component>
     <!--
     <a href="cse435-introduction-to-electronic-design-automation-and-testing/hw5/hw5.pdf" class="hide">print</a>
     -->
